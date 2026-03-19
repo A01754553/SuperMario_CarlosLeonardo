@@ -1,0 +1,95 @@
+:root {
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    justify-content: center;
+    align-content: center;
+}
+
+.titulo {
+    align-self: center;
+    width: 80%;
+    font-size: 72px;
+    -unity-text-align: upper-center;
+    color: rgb(251, 248, 248);
+    -unity-font-style: bold;
+    top: 35px;
+}
+
+.botones {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: auto;
+    background-color: rgba(0, 0, 0, 0);
+    width: initial;
+    height: initial;
+    left: 450px;
+    flex-shrink: 1;
+    background-image: none;
+}
+
+.boton-juego {
+    width: 350px;
+    height: 200px;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/Button%206/7.png?fileID=2800000&guid=d3dd507249881854fbaa9d44a29f0d89&type=3#7");
+    transition-duration: 0.35s;
+    transition-timing-function: ease-in-out;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.boton-juego:hover {
+    scale: 1.15 1.15;
+}
+
+.panel-ayuda {
+    display: none;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.63);
+    align-self: center;
+}
+
+.texto-ayuda {
+}
+
+.cerrar-ayuda {
+    position: absolute;
+    font-size: 0;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url("project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/gold/CLOSE-1.png?fileID=2800000&guid=c0b6c38e965c69c4baaec76c33e68cf3&type=3#CLOSE-1");
+    transition-duration: 0.35s;
+    transition-timing-function: ease-in-out;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.cerrar-ayuda:hover {
+    scale: 1.15 1.15;
+}
+
+.nombre {
+    position: absolute;
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.01);
+    height: 50px;
+    align-self: center;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: normal;
+}

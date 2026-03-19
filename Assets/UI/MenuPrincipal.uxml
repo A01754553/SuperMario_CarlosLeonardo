@@ -1,0 +1,16 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MenuPrincipal.uss?fileID=7433441132597879392&amp;guid=2b6d08ed04cf163468fb6f5223494b76&amp;type=3#MenuPrincipal"/>
+    <ui:Label text="Carlos Leonardo Gonzalez Vilchis (A01754553)" name="Nombre" class="nombre" style="top: 979px; left: 993px; height: 48px; width: 508px;"/>
+    <ui:Label text="Tarea Unity" name="Titulo" class="titulo" style="background-color: rgba(0, 0, 0, 0.29); -unity-slice-type: sliced; background-position-x: center;"/>
+    <ui:VisualElement name="Menu" class="menu" style="flex-grow: 1; align-content: center;">
+        <ui:VisualElement name="Botones" class="botones" style="flex-grow: 1; width: 972px; height: 671px; flex-direction: column; align-items: center; justify-content: center; align-content: auto; align-self: flex-start; position: absolute; top: 166px; left: 468px; background-color: rgba(0, 0, 0, 0.43);">
+            <ui:Button text="Jugar" name="BotonJugar" class="boton-juego"/>
+            <ui:Button text="Ayuda" name="BotonAyuda" class="boton-juego"/>
+            <ui:Button text="Créditos" name="BotonCreditos" class="boton-juego"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="PanelAyuda" class="panel-ayuda" style="flex-grow: 1; display: none; top: 265px; left: 449px; height: 668px; width: 992px;">
+        <ui:Button text="Button" name="CerrarAyuda" class="cerrar-ayuda" style="height: 60px; width: 68px; top: 17px; left: 913px; background-image: url(&quot;project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/gold/CLOSE-1.png?fileID=2800000&amp;guid=c0b6c38e965c69c4baaec76c33e68cf3&amp;type=3#CLOSE-1&quot;);"/>
+        <ui:Label text="Bienvenido a mi proyecto en Unity.&#10;&#10;Usa las teclas A y D&#10;para moverte a la izquierda&#10;y derecha.&#10;&#10;Presiona la barra espaciadora&#10;para saltar.&#10;&#10;Explora el escenario,&#10;practica los movimientos&#10;y familiarízate con los controles." name="TextoAyuda" class="texto-ayuda" style="align-self: center; width: 80%; font-size: 36px; color: rgb(255, 255, 255); -unity-font-style: bold; -unity-text-align: upper-center;"/>
+    </ui:VisualElement>
+</ui:UXML>
