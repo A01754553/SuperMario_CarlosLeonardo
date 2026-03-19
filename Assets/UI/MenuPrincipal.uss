@@ -93,3 +93,24 @@
     color: rgb(255, 255, 255);
     -unity-font-style: normal;
 }
+
+.creditos {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.98);
+    overflow: visible;
+    display: flex;
+    color: rgb(26, 26, 26);
+}
+
+.titulo-creditos {
+    position: absolute;
+    -unity-text-align: upper-center;
+}
+
+.cerrar-creditos {
+    position: absolute;
+    background-image: url("project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/gold/CLOSE-1.png?fileID=2800000&guid=c0b6c38e965c69c4baaec76c33e68cf3&type=3#CLOSE-1");
+    background-color: rgba(0, 0, 0, 0);
+}

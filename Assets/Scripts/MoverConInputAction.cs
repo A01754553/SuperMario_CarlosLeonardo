@@ -2,6 +2,8 @@ using System.Numerics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+// Carlos Leonardo Gonzalez Vilchis
+
 public class MoverConInputAction : MonoBehaviour
 {
     [SerializeField]
@@ -17,7 +19,7 @@ public class MoverConInputAction : MonoBehaviour
 
     private float velocidadY = 7f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
         accionMover.Enable();
@@ -33,22 +35,21 @@ public class MoverConInputAction : MonoBehaviour
 
     void OnDisable()
     {
-        accionSalto.Disable(); //se puede quitar
+        accionSalto.Disable(); 
         accionSalto.performed -= saltar;
     }
 
-    public void saltar(InputAction.CallbackContext context) // esto se ocupa hacer public pq es una funcion que se va a llamar desde fuera
+    public void saltar(InputAction.CallbackContext context) 
     {
         if (estado.estaEnPiso) {
             rb.linearVelocityY = velocidadY;
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         UnityEngine.Vector2 movimiento = accionMover.ReadValue<UnityEngine.Vector2>();
-        //transform.position = (UnityEngine.Vector2)transform.position + movimiento * velocidadX * Time.deltaTime;
+        
         rb.linearVelocityX = velocidadX * movimiento.x;
     }
 }
